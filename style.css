@@ -44,6 +44,9 @@
   padding: 2vh 0 2vh 0;
 }
 
+.trois {
+  padding-top: 10vh;
+}
 .trois .container .column {
   display: flex;
 }
@@ -56,7 +59,10 @@
   font-size: 11px;
   width: 90%;
 }
-.trois button {
+.trois .container-button {
+  padding: 10vh 0 10vh 0;
+}
+.trois .container-button button {
   color: black;
   display: flex;
   margin: auto;

@@ -1,32 +1,32 @@
-@import './scss/_header.scss';
-@import './scss/_var.scss';
-@import './scss/texte.scss';
-@import './scss/trois.scss';
+@import "./scss/_header.scss";
+@import "./scss/_var.scss";
+@import "./scss/texte.scss";
+@import "./scss/trois.scss";
 
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 @font-face {
-	font-family: 'Abel';
-	src: url('./font/Abel-Regular.ttf') format(‘ttf’);
+  font-family: "Abel";
+  src: url("./font/Abel-Regular.ttf") format(‘ttf’);
 }
 
 * {
-    font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 .button {
-    border: 2px solid $yellow;
-    border-radius: 50px;
-    color: white;
-    background: transparent;
-    text-transform: uppercase;
-    padding: 10px;
+  border: 2px solid $yellow;
+  border-radius: 50px;
+  color: white;
+  background: transparent;
+  text-transform: uppercase;
+  padding: 10px;
 }

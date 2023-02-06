@@ -1,42 +1,42 @@
-@import '_var.scss';
+@import "_var.scss";
 
 .wake {
-    background-color: rgba(23, 25, 30, 1);
-    padding: 5vh 0 5vh 0;
-    
-        header {
-            display: flex;
-            justify-content: space-between;
-            ul {
-                list-style: none;
-                display: flex;
-                justify-content: space-around;
-                width: 20vh;
-                a {
-                    color: white;
-                    text-decoration: none;
-                }
-            }
-        }
-        .wake-left {
-            width: 60%;
-            h2 {
-                color: $yellow;
-                text-transform: uppercase;
-                font-size: 95px;
-            }
-            p {
-                color: white;
-                font-size: 11px;
-                width: 80%;
-            }
-            button {
-                border: 2px solid $yellow;
-                border-radius: 50px;
-                color: white;
-                background: transparent;
-                text-transform: uppercase;
-                padding: 10px;
-            }
+  background-color: rgba(23, 25, 30, 1);
+  padding: 5vh 0 5vh 0;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      width: 20vh;
+      a {
+        color: white;
+        text-decoration: none;
+      }
     }
+  }
+  .wake-left {
+    width: 60%;
+    h2 {
+      color: $yellow;
+      text-transform: uppercase;
+      font-size: 95px;
+    }
+    p {
+      color: white;
+      font-size: 11px;
+      width: 80%;
+    }
+    button {
+      border: 2px solid $yellow;
+      border-radius: 50px;
+      color: white;
+      background: transparent;
+      text-transform: uppercase;
+      padding: 10px;
+    }
+  }
 }
