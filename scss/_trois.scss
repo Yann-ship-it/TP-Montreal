@@ -3,8 +3,6 @@
 .trois {
   padding-top: 10vh;
   .container {
-    .column {
-      display: flex;
       article {
         h3 {
           color: $yellow;
@@ -26,4 +24,3 @@
       margin: auto;
     }
   }
-}

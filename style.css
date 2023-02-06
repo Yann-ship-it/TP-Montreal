@@ -47,25 +47,42 @@
 .trois {
   padding-top: 10vh;
 }
-.trois .container .column {
-  display: flex;
-}
-.trois .container .column article h3 {
+.trois .container article h3 {
   color: rgb(255, 218, 0);
   text-transform: uppercase;
   font-size: 30px;
 }
-.trois .container .column article p {
+.trois .container article p {
   font-size: 11px;
   width: 90%;
 }
-.trois .container-button {
+
+.container-button {
   padding: 10vh 0 10vh 0;
 }
-.trois .container-button button {
+.container-button button {
   color: black;
   display: flex;
   margin: auto;
+}
+
+.compteur {
+  background-color: rgb(23, 25, 30);
+  padding: 8vh 0 8vh 0;
+}
+.compteur .container .column {
+  justify-content: space-around;
+}
+.compteur .container .column article {
+  text-align: center;
+}
+.compteur .container .column article h3 {
+  color: white;
+  font-size: 40px;
+}
+.compteur .container .column article p {
+  color: rgb(255, 218, 0);
+  text-transform: uppercase;
 }
 
 body {
@@ -93,4 +110,8 @@ body {
   background: transparent;
   text-transform: uppercase;
   padding: 10px;
+}
+
+.column {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

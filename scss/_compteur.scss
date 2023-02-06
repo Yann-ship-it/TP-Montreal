@@ -1,0 +1,22 @@
+@import "./var.scss";
+
+.compteur {
+    background-color: $dark;
+    padding: 8vh 0 8vh 0;
+    .container {
+        .column {
+            justify-content: space-around;
+            article {
+                text-align: center;
+                h3 {
+                    color: white;
+                    font-size: 40px;
+                }
+                p {
+                    color: $yellow;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

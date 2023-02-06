@@ -2,6 +2,7 @@
 @import "./scss/_var.scss";
 @import "./scss/texte.scss";
 @import "./scss/trois.scss";
+@import "./scss/compteur";
 
 body {
   padding: 0;
@@ -29,4 +30,8 @@ body {
   background: transparent;
   text-transform: uppercase;
   padding: 10px;
+}
+
+.column {
+    display: flex;
 }
