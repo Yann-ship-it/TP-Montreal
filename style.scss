@@ -3,6 +3,7 @@
 @import "./scss/texte.scss";
 @import "./scss/trois.scss";
 @import "./scss/compteur";
+@import "./scss/works.scss";
 
 body {
   padding: 0;
@@ -34,4 +35,8 @@ body {
 
 .column {
     display: flex;
+}
+
+.max {
+    width: 100%;
 }
