@@ -1,5 +1,7 @@
 @import './scss/_header.scss';
 @import './scss/_var.scss';
+@import './scss/texte.scss';
+@import './scss/trois.scss';
 
 body {
     padding: 0;
@@ -13,4 +15,9 @@ body {
 
 * {
     font-family: 'Abel', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
 }

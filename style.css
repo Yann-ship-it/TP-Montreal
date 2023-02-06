@@ -1,37 +1,47 @@
 @charset "UTF-8";
 .wake {
   background-color: rgb(23, 25, 30);
+  padding: 5vh 0 5vh 0;
 }
-.wake .container {
-  width: 80%;
-  margin: auto;
-}
-.wake .container header {
+.wake header {
   display: flex;
   justify-content: space-between;
 }
-.wake .container header ul {
+.wake header ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
   width: 20vh;
 }
-.wake .container header ul a {
+.wake header ul a {
   color: white;
   text-decoration: none;
 }
-.wake .container .wake-left h2 {
+.wake .wake-left {
+  width: 60%;
+}
+.wake .wake-left h2 {
   color: rgb(255, 218, 0);
   text-transform: uppercase;
+  font-size: 95px;
 }
-.wake .container .wake-left p {
+.wake .wake-left p {
   color: white;
+  font-size: 11px;
+  width: 80%;
 }
-.wake .container .wake-left button {
+.wake .wake-left button {
   border: 2px solid rgb(255, 218, 0);
   border-radius: 50px;
-  color: rgb(255, 218, 0);
+  color: white;
   background: transparent;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.texte {
+  background: rgb(255, 218, 0);
+  padding: 2vh 0 2vh 0;
 }
 
 body {
@@ -45,4 +55,9 @@ body {
 }
 * {
   font-family: "Abel", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */
