@@ -44,6 +44,24 @@
   padding: 2vh 0 2vh 0;
 }
 
+.trois .container .column {
+  display: flex;
+}
+.trois .container .column article h3 {
+  color: rgb(255, 218, 0);
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.trois .container .column article p {
+  font-size: 11px;
+  width: 90%;
+}
+.trois button {
+  color: black;
+  display: flex;
+  margin: auto;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -60,4 +78,13 @@ body {
 .container {
   width: 80%;
   margin: auto;
+}
+
+.button {
+  border: 2px solid rgb(255, 218, 0);
+  border-radius: 50px;
+  color: white;
+  background: transparent;
+  text-transform: uppercase;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
