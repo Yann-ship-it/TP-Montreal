@@ -5,3 +5,12 @@ body {
     padding: 0;
     margin: 0;
 }
+
+@font-face {
+	font-family: 'Abel';
+	src: url('./font/Abel-Regular.ttf') format(‘ttf’);
+}
+
+* {
+    font-family: 'Abel', sans-serif;
+}
