@@ -1,1 +1,12 @@
-/*# sourceMappingURL=style.css.map */
+.wake {
+  background-color: rgb(23, 25, 30);
+}
+.wake .container {
+  width: 80%;
+  margin: auto;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
