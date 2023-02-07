@@ -172,7 +172,7 @@
           </p>
 
           <form action="./form.php" method="post">
-            <div>
+            <div class="name">
               <label for="name">Prénom</label>
               <input
                 type="text"
@@ -181,7 +181,7 @@
                 name="user_name"
               />
             </div>
-            <div>
+            <div class="secondName">
               <label for="secondName">Nom</label>
               <input
                 type="text"
@@ -190,19 +190,19 @@
                 name="seconde_name"
               />
             </div>
-            <div>
-              <label for="association" class="left">Association :</label>
-              <select name="association" id="association">
-                <option value="x">AssociationX</option>
-                <option value="y">AssociationY</option>
-                <option value="z">AssociationZ</option>
+            <div class="objet">
+              <label for="objet">Objet</label>
+              <select name="objet" id="objet">
+                <option value="x">ObjetA</option>
+                <option value="y">ObjetB</option>
+                <option value="z">ObjetC</option>
               </select>
             </div>
-            <div>
-              <label for="msg">Message :</label>
+            <div class="message">
+              <label for="msg">Message</label>
               <textarea id="msg" name="user_message"></textarea>
             </div>
-            <input type="submit" name="send" value="Send">
+            <input id="send" type="submit" name="send" value="Envoyer">
           </form>
         </div>
       </section>

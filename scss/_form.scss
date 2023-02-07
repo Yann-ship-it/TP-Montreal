@@ -10,10 +10,53 @@
             text-transform: uppercase;
         }
         form {
-            div {
-                label {
-                    color: red;
+            background-color: #F2F2F2;
+            padding: 5vh;
+            .name {
+                display: flex;
+                flex-direction: column;
+                input {
+                    margin: 1% 0 1% 0;
+                    padding: 1%;
+                    background-color: white;
+                    border: 2px solid $yellow;
                 }
+            }
+            .secondName {
+                display: flex;
+                flex-direction: column;
+                input {
+                    margin: 1% 0 1% 0;
+                    padding: 1%;
+                    background-color: white;
+                    border: 2px solid $yellow;
+                }
+            }
+            .objet {
+                display: flex;
+                flex-direction: column;
+                select {
+                    margin: 1% 0 1% 0;
+                    padding: 1%;
+                    background-color: #EFEFEF;
+                    border: 2px solid $yellow;
+                }
+            }
+            .message {
+                display: flex;
+                flex-direction: column;
+                #msg {
+                    margin: 1% 0 1% 0;
+                    padding: 1%;
+                    background-color: #EFEFEF;
+                    border: 2px solid $yellow;
+                }
+            }
+            #send {
+                background-color: $yellow;
+                border: none;
+                padding: 2%;
+                color: white;
             }
         }
     }
