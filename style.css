@@ -1,36 +1,56 @@
 @charset "UTF-8";
-.wake {
+#wake {
   background-color: rgb(23, 25, 30);
   padding: 5vh 0 5vh 0;
 }
-.wake header {
+#wake header {
   display: flex;
   justify-content: space-between;
 }
-.wake header ul {
+#wake header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+}
+#wake header nav #menu {
+  background-color: rgb(255, 218, 0);
+  width: 4vh;
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: white;
+}
+#wake header nav #menu:hover {
+  background: rgb(201, 201, 201);
+  color: black;
+}
+#wake header nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  width: 20vh;
+  width: 25vh;
 }
-.wake header ul a {
+#wake header nav ul a {
   color: white;
   text-decoration: none;
 }
-.wake .wake-left {
+#wake .wake-left {
   width: 60%;
 }
-.wake .wake-left h2 {
+#wake .wake-left h2 {
   color: rgb(255, 218, 0);
   text-transform: uppercase;
   font-size: 95px;
 }
-.wake .wake-left p {
+#wake .wake-left p {
   color: white;
   font-size: 11px;
   width: 80%;
 }
-.wake .wake-left button {
+#wake .wake-left button {
   border: 2px solid rgb(255, 218, 0);
   border-radius: 50px;
   color: white;
@@ -137,6 +157,8 @@
 }
 .clients .container .imgClients {
   display: flex;
+  width: 90%;
+  margin: auto;
   justify-content: space-between;
 }
 
@@ -235,6 +257,27 @@ footer .icons {
   width: 15%;
 }
 
+#scrollTop {
+  scroll-behavior: smooth;
+  z-index: 9999;
+  position: fixed;
+  bottom: 30px;
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+  height: 40px;
+  right: 30px;
+  text-align: center;
+  width: 40px;
+  color: white;
+  background-color: rgb(255, 218, 0);
+}
+#scrollTop i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -247,6 +290,7 @@ body {
 * {
   font-family: "Abel", sans-serif;
   font-weight: 300;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -269,4 +313,14 @@ body {
 
 .max {
   width: 100%;
+}
+
+.none {
+  display: none;
+  transition: 0.7s;
+}
+
+.visible {
+  display: block;
+  transition: 0.7s;
 }/*# sourceMappingURL=style.css.map */

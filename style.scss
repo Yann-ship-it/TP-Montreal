@@ -8,6 +8,7 @@
 @import "./scss/form.scss";
 @import "./scss/topfooter.scss";
 @import "./scss/footer.scss";
+@import "./scss/scrolltop.scss";
 
 body {
   padding: 0;
@@ -22,6 +23,7 @@ body {
 * {
   font-family: "Abel", sans-serif;
   font-weight: 300;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -44,4 +46,14 @@ body {
 
 .max {
     width: 100%;
+}
+
+ .none {
+   display: none;
+   transition: 0.7s;
+}
+
+ .visible {
+  display: block;
+  transition: 0.7s;
 }

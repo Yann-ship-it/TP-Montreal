@@ -1,20 +1,40 @@
 @import "_var.scss";
 
-.wake {
+#wake {
   background-color: $dark;
   padding: 5vh 0 5vh 0;
 
   header {
     display: flex;
     justify-content: space-between;
-    ul {
-      list-style: none;
+    nav {
       display: flex;
+      align-items: center;
       justify-content: space-around;
-      width: 20vh;
-      a {
+      width: 30%;
+      #menu {
+        background-color: $yellow;
+        width: 4vh;
+        height: 4vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
         color: white;
-        text-decoration: none;
+        &:hover {
+          background: rgb(201, 201, 201);
+          color: black;
+        }
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        width: 25vh;
+        a {
+          color: white;
+          text-decoration: none;
+        }
       }
     }
   }
