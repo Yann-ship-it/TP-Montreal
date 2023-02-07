@@ -1,21 +1,33 @@
 <?php
-    if($_POST) {
-        if($_POST['name']!='') {
-        echo "<br/><br/>Bonjour " . $_POST['name'] . " " . $_POST['nom'] . "!<br/>";
-        echo "Je peux vous appeler " . $_POST['secondName'] . "<br/><br/>";
+    $serveur = "localhost";
+    $dbname = "formulaire";
+    $user = "root";
+    $pass = "root";
+    
+    $prenom = $_POST["name"];
+    $nom = $_POST["secondName"];
+    $objet = $_POST["objet"];
+    $message = $_POST["message"];
+    
+    try{
+        //On se connecte à la BDD
+        $dbco = new PDO("mysql:host=$serveur;dbname=$dbname",$user,$pass);
+        $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+        //On insère les données reçues
+        $sth = $dbco->prepare("
+            INSERT INTO form(prenom, mail, age, sexe, pays)
+            VALUES(:prenom, :mail, :age, :sexe, :pays)");
+        $sth->bindParam(':name',$name);
+        $sth->bindParam(':nom',$secondName);
+        $sth->bindParam(':objet',$objet);
+        $sth->bindParam(':message',$message);
+        $sth->execute();
         
-        if(isset($_POST['association'])) {
-        echo "C'est une bonne idée de commencer à apprendre à programmer en PHP !<br/><br/>";
-        }
-        else {
-        if($_POST['association']=='H') {
-        $mot = "débutant";
-        }
-        else {
-        $mot = "débutante";
-        }
-        echo "Comme vous n'êtes pas " . $mot . " vous pouvez passer directement au mini-projet !<br/><br/>";
-        }
-        }
-        }
+        //On renvoie l'utilisateur vers la page de remerciement
+        header("Location:form-merci.html");
+    }
+    catch(PDOException $e){
+        echo 'Impossible de traiter les données. Erreur : '.$e->getMessage();
+    }
 ?>

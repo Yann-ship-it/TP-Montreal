@@ -133,6 +133,9 @@
   justify-content: space-between;
 }
 
+.formulaire {
+  padding: 5vh 0 5vh 0;
+}
 .formulaire .container h2 {
   color: rgb(255, 218, 0);
   text-transform: uppercase;
