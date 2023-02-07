@@ -1,32 +1,16 @@
-<?php
-    $serveur = "localhost";
-    $dbname = "formulaire";
-    $user = "root";
-    $pass = "root";
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail</title>
+</head>
+<body>
     
-    $prenom = $_POST["name"];
-    $nom = $_POST["secondName"];
-    $objet = $_POST["objet"];
-    $message = $_POST["message"];
+<?php 
     
-    try{
-        //On se connecte à la BDD
-        $dbco = new PDO("mysql:host=$serveur;dbname=$dbname",$user,$pass);
-        $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
-        //On insère les données reçues
-        $sth = $dbco->prepare("
-            INSERT INTO form(prenom, mail, age, sexe, pays)
-            VALUES(:prenom, :mail, :age, :sexe, :pays)");
-        $sth->bindParam(':name',$name);
-        $sth->bindParam(':nom',$secondName);
-        $sth->bindParam(':objet',$objet);
-        $sth->bindParam(':message',$message);
-        $sth->execute();
-        header("Location:form-merci.html");
-        
-    }
-    catch(PDOException $e){
-        echo 'Impossible de traiter les données. Erreur : '.$e->getMessage();
-    }
-?>
+    ?>
+
+</body>
+</html>
+
