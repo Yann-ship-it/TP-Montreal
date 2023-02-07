@@ -41,19 +41,19 @@ body {
 }
 
 .column {
-    display: flex;
+  display: flex;
 }
 
 .max {
-    width: 100%;
+  width: 100%;
 }
 
- .none {
-   display: none;
-   transition: 0.7s;
+.none {
+  display: none;
+  transition: 0.7s;
 }
 
- .visible {
+.visible {
   display: block;
   transition: 0.7s;
 }

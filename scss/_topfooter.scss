@@ -1,13 +1,13 @@
 @import "./var.scss";
 
 .topFooter {
-    background-color: $yellow;
-    padding: 10vh 0 10vh 0;
-    .container {
-        display: flex;
-        justify-content: space-between;
-        div {
-            display: flex;
-        }
+  background-color: $yellow;
+  padding: 10vh 0 10vh 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    div {
+      display: flex;
     }
+  }
 }
