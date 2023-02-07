@@ -43,6 +43,10 @@
   background: rgb(255, 218, 0);
   padding: 2vh 0 2vh 0;
 }
+.texte p {
+  width: 70%;
+  margin: auto;
+}
 
 .trois {
   padding-top: 10vh;
@@ -53,7 +57,7 @@
   font-size: 30px;
 }
 .trois .container article p {
-  font-size: 11px;
+  font-size: 13px;
   width: 90%;
 }
 
@@ -87,6 +91,8 @@
 
 .works .container h2 {
   color: rgb(255, 218, 0);
+  margin: 10vh 0 5vh 0;
+  font-size: 40px;
   text-transform: uppercase;
 }
 .works .container p {
@@ -118,6 +124,7 @@
 
 .clients {
   background-color: rgb(23, 25, 30);
+  margin-top: 10vh;
   padding: 10vh 0 10vh 0;
 }
 .clients .container h2 {
@@ -142,6 +149,7 @@
 }
 .formulaire .container p {
   text-transform: uppercase;
+  padding-bottom: 5vh;
 }
 .formulaire .container form {
   background-color: #F2F2F2;
@@ -238,6 +246,7 @@ body {
 }
 * {
   font-family: "Abel", sans-serif;
+  font-weight: 300;
 }
 
 .container {
