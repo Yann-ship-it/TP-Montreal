@@ -1,0 +1,20 @@
+@import "./var.scss";
+
+.clients {
+    background-color: $dark;
+    padding: 10vh 0 10vh 0;
+    .container {
+        h2 {
+            text-transform: uppercase;
+            color: $yellow;
+        }
+        p {
+            text-transform: uppercase;
+            color: white;
+        }
+        .imgClients {
+            display: flex;
+            justify-content: space-between;
+        } 
+    }
+}
