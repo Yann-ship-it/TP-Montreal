@@ -1,3 +1,20 @@
 @import "./var.scss";
 
-
+.formulaire {
+    .container {
+        h2 {
+            color: $yellow;
+            text-transform: uppercase;
+        }
+        p {
+            text-transform: uppercase;
+        }
+        form {
+            div {
+                label {
+                    color: red;
+                }
+            }
+        }
+    }
+}

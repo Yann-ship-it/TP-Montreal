@@ -170,10 +170,39 @@
             consectetur sed, convallis at tellus. Praesent sapien massa,
             convallis a pellentesque nec, egestas non nisi.
           </p>
+
           <form action="./form.php" method="post">
             <div>
-              <label for="name"></label>
+              <label for="name">Prénom</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Votre prénom"
+                name="user_name"
+              />
             </div>
+            <div>
+              <label for="secondName">Nom</label>
+              <input
+                type="text"
+                placeholder="Votre nom"
+                id="secondName"
+                name="seconde_name"
+              />
+            </div>
+            <div>
+              <label for="association" class="left">Association :</label>
+              <select name="association" id="association">
+                <option value="x">AssociationX</option>
+                <option value="y">AssociationY</option>
+                <option value="z">AssociationZ</option>
+              </select>
+            </div>
+            <div>
+              <label for="msg">Message :</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </div>
+            <input type="submit" name="send" value="Send">
           </form>
         </div>
       </section>

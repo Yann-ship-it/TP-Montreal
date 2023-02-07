@@ -116,6 +116,34 @@
   grid-area: 2/2/3/3;
 }
 
+.clients {
+  background-color: rgb(23, 25, 30);
+  padding: 10vh 0 10vh 0;
+}
+.clients .container h2 {
+  text-transform: uppercase;
+  color: rgb(255, 218, 0);
+}
+.clients .container p {
+  text-transform: uppercase;
+  color: white;
+}
+.clients .container .imgClients {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulaire .container h2 {
+  color: rgb(255, 218, 0);
+  text-transform: uppercase;
+}
+.formulaire .container p {
+  text-transform: uppercase;
+}
+.formulaire .container form div label {
+  color: red;
+}
+
 body {
   padding: 0;
   margin: 0;
