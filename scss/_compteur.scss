@@ -20,3 +20,19 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) { 
+  .compteur {
+    .container {
+      .column {
+        flex-wrap: wrap;
+        article {
+          width: 50%;
+        }
+        .bot {
+          padding-top: 5vh;
+        }
+      }
+    }
+  }
+}

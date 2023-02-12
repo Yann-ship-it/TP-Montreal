@@ -118,6 +118,17 @@
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 768px) {
+  .compteur .container .column {
+    flex-wrap: wrap;
+  }
+  .compteur .container .column article {
+    width: 50%;
+  }
+  .compteur .container .column .bot {
+    padding-top: 5vh;
+  }
+}
 .works .container h2 {
   color: rgb(255, 218, 0);
   margin: 10vh 0 5vh 0;
