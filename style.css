@@ -190,6 +190,9 @@
   margin: auto;
   justify-content: space-between;
 }
+.clients .container .imgClients img {
+  width: 15%;
+}
 
 .formulaire {
   padding: 5vh 0 5vh 0;
