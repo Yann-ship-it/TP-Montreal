@@ -24,3 +24,17 @@
     margin: auto;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .trois {
+    .container {
+      .column {
+        flex-direction: column;
+        gap: 50px;
+      }
+      .container-button {
+        padding: 2vh 0 2vh 0;
+      }
+    }
+  }
+}
