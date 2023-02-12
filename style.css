@@ -15,8 +15,8 @@
 }
 #wake header nav #menu {
   background-color: rgb(255, 218, 0);
-  width: 4vh;
-  height: 4vh;
+  width: 35px;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,13 +27,13 @@
   background: rgb(201, 201, 201);
   color: black;
 }
-#wake header nav ul {
+#wake header nav .open {
   list-style: none;
   display: flex;
   justify-content: space-around;
   width: 25vh;
 }
-#wake header nav ul a {
+#wake header nav .open a {
   color: white;
   text-decoration: none;
 }
