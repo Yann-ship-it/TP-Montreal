@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Menu burger
-const menu = document.getElementById("menu");
+const menu = document.querySelector("#menu");
 const ul = document.querySelector("ul");
 
 menu.addEventListener("click", function (e) {
@@ -27,10 +27,6 @@ let step = Math.ceil(total / tours);
 let cpt = 0;
 
 let all = document.querySelectorAll(".allElements")
-let sac =  document.getElementById("sac");
-let coffee =  document.getElementById("cofee");
-let design = document.getElementById("design")
-let awards = document.getElementById("awards")
 
 let maxArrayScore = []
 let score = 0
@@ -64,8 +60,6 @@ let intervalId = setInterval(() => {
 
   if(maxArrayScore[1] != all[1].textContent && maxArrayScore[1] >= count){
     all[1].innerHTML = count;
-    console.log(all[1].textContent)
-    console.log(maxArrayScore[1])
   }
   else{
     all[1].innerHTML = maxArrayScore[1]
