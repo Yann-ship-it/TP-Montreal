@@ -62,4 +62,17 @@
 }
 
 @media screen and (max-width: 1200px) {
+  #wake {
+    .container {
+      header {
+        nav {
+          width: 70%;
+          justify-content: center;
+          ul {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
 }

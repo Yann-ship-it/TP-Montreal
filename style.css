@@ -59,6 +59,15 @@
   padding: 10px;
 }
 
+@media screen and (max-width: 1200px) {
+  #wake .container header nav {
+    width: 70%;
+    justify-content: center;
+  }
+  #wake .container header nav ul {
+    padding: 0;
+  }
+}
 .texte {
   background: rgb(255, 218, 0);
   padding: 2vh 0 2vh 0;
